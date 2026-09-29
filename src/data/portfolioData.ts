@@ -1,7 +1,7 @@
 export interface PinItem {
   id: string;
-  type: 'project' | 'about' | 'skill' | 'experience' | 'beyond';
-  board: 'Projects' | 'About Me' | 'Skills Toolbox' | 'Experience' | 'Beyond Code';
+  type: 'project' | 'education' | 'skill' | 'experience' | 'beyond';
+  board: 'Projects' | 'Education' | 'Skills Toolbox' | 'Experience' | 'Beyond Code';
   title: string;
   shortDescription: string;
   fullDescription: string;
@@ -186,36 +186,37 @@ export const PINS: PinItem[] = [
   },
 
   // 5. Dance & Movement Board Pin
-  {
-    id: 'beyond-dance',
-    type: 'beyond',
-    board: 'Beyond Code',
-    title: 'Choreography & Spatial Harmony in Motion',
-    shortDescription: 'How collegiate dance choreography shaped my discipline, spatial awareness, and team synchronization.',
-    fullDescription: 'Dance is architecture in motion. As lead choreographer and performer in our university cultural troupe, I learned how minute timing, balance, and trust across a team create breathtaking performances — principles that directly enhance software engineering leadership.',
-    image: '/src/assets/images/board_dance_creative_1790105068857.jpg',
-    aspectRatio: 'aspect-[3/4]',
-    linkText: 'dance.performance',
-    tags: ['Contemporary Dance', 'Choreography', 'Teamwork', 'Stage Craft'],
-    date: '2023 – Present',
-    savesCount: 0,
-    commentsCount: 0,
-    featured: true,
-    metadata: {
-      role: 'Choreographer & Lead Performer',
-      highlights: [
-        'Choreographed championship routines for collegiate fests with 1st place regional recognition',
-        'Directed troupe rehearsals focusing on synchronized stage geometry and musical timing',
-        'Discovered that dance and clean code share the same DNA: balance, timing, and elegance'
-      ]
-    }
-  },
+{
+  id: 'beyond-kathak',
+  type: 'beyond',
+  board: 'Beyond Code',
+  title: 'A Rhythm I Grew Up With',
+  shortDescription: 'From kindergarten rehearsals to Madhyama Purna — a lifelong love for Kathak, rhythm, and storytelling.',
+  fullDescription: 'Before I learned to code, I learned to count in taal. I have been learning Kathak since kindergarten — growing up with ghungroos, riyaaz, footwork, expressions, and stories told without words. Years later, I completed my Madhyama Purna from Gandharva Mahavidyalaya. Somewhere along the way, Kathak stopped being something I learned and became something I carried with me.',
+  image: '/src/assets/images/kathak.jpg',
+  aspectRatio: 'aspect-[3/4]',
+  linkText: 'riyaaz.and.rhythm',
+  tags: ['Kathak', 'Indian Classical Dance', 'Riyaaz', 'Storytelling'],
+  date: 'Since Kindergarten',
+  savesCount: 0,
+  commentsCount: 0,
+  featured: true,
+  metadata: {
+    role: 'Kathak Student & Performer',
+    highlights: [
+      'Learning Kathak since kindergarten',
+      'Completed Madhyama Purna from Gandharva Mahavidyalaya',
+      'Years of training in taal, footwork, abhinaya, and classical repertoire',
+      'A practice rooted in patience, discipline, expression, and storytelling'
+    ]
+  }
+},
 
-  // 6. About Me: Academic Foundation
+  // 6. Education: Academic Foundation
   {
     id: 'about-engineering',
-    type: 'about',
-    board: 'About Me',
+    type: 'education',
+    board: 'Education',
     title: 'Information Technology Undergrad',
     shortDescription: 'Turning theoretical computer science foundations into reliable, production-grade web applications.',
     fullDescription: 'Pursuing my Bachelor of Technology in Information Technology (Class of 2027), with a CGPA of 9.0 up to Semester 6. My coursework in Operating Systems, Database Management Systems, Computer Networks, and Software Engineering provides a strong foundation for building fast, resilient applications.',    image: '/src/assets/images/vesit.jpg',
@@ -240,8 +241,8 @@ export const PINS: PinItem[] = [
     
   {
     id: 'about-iitm',
-    type: 'about',
-    board: 'About Me',
+    type: 'education',
+    board: 'Education',
     title: 'BS in Data Science & Applications',
     shortDescription: 'Exploring data science, statistical learning, and computational thinking to build intelligent, data-driven solutions.',
     fullDescription: 'Pursuing my Bachelor of Science in Data Science and Applications from IIT Madras, alongside my engineering degree. The programme strengthens my foundations in mathematics, statistics, programming, and data analysis, helping me approach real-world problems through data-driven thinking.',
@@ -296,15 +297,15 @@ export const PINS: PinItem[] = [
     id: 'exp-internship',
     type: 'experience',
     board: 'Experience',
-    title: 'Software Engineering Internship Milestone',
+    title: 'Web Developer Intern @Palcoa Solutions Pvt. Ltd.',
     shortDescription: 'Built full-stack web applications, refactored API routes, and developed accessible React UI components.',
     fullDescription: 'Collaborated on end-to-end full-stack web applications, architecting responsive UI modules and writing performant backend API endpoints.',
-    image: '/src/assets/images/project_roledar_1790105017179.jpg',
+    image: '/src/assets/images/palcoa.png',
     aspectRatio: 'aspect-[4/3]',
     linkText: 'internship.log',
     showGithub : false,
     showDemo : false,
-    tags: ['Software Engineering', 'React', 'REST APIs', 'Testing', 'Agile'],
+    tags: ['Software Engineering', 'Bootstrap', 'REST APIs'],
     date: 'Summer 2024',
     savesCount: 0,
     commentsCount: 0,
@@ -312,38 +313,39 @@ export const PINS: PinItem[] = [
       organization: 'Technology Solutions & Product Lab',
       role: 'Full-Stack Engineering Intern',
       highlights: [
-        'Refactored legacy REST endpoints, improving query execution time by 28% across high-volume routes',
-        'Developed 12+ modular React components aligned with accessibility and design system guidelines',
-        'Authored automated test suites and participated in daily code reviews and sprint planning'
-      ]
-    }
-  },
+         'Engineered a salon management platform to streamline appointment scheduling and operations.',
+ 'Established role-based access control with secure authentication flows.',
+ 'Integrated Firebase Authentication to enable reliable and secure user session management and a responsive Bootstrap-based UI, enhancing overall usability and user experience.'
 
-  // 9. Experience: Hackathon Finalist
-  {
-    id: 'exp-hackathon',
-    type: 'experience',
-    board: 'Experience',
-    title: 'Hackathon Finalist & Top Innovator Sprint',
-    shortDescription: 'Spearheaded technical prototype development within 36 hours, ranking in top 5 out of 140+ teams.',
-    fullDescription: 'Built an assistive community intelligence platform under intense time constraints, presenting to industry mentors and winning top honors.',
-    image: '/src/assets/images/project_hangout_1790105032086.jpg',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'hackathon.showcase',
-    tags: ['Hackathon', '36-Hour Sprint', 'Top 5', 'Rapid Prototyping'],
-    date: '2024',
-    savesCount: 0,
-    commentsCount: 0,
-    metadata: {
-      organization: 'National Collegiate Innovation Hackathon',
-      role: 'Team Lead & Frontend Architect',
-      highlights: [
-        'Ranked in top 5 out of 140+ competing engineering teams nationwide',
-        'Led the frontend architecture and real-time API integrations within 36 consecutive hours',
-        'Pitched the prototype to industry leaders, highlighting technical feasibility and user impact'
       ]
     }
   },
+  // 9. Experience: Software Developer Intern
+{
+  id: 'exp-sports-reconnect',
+  type: 'experience',
+  board: 'Experience',
+  title: 'Software Developer Intern @Sports Reconnect Pvt. Ltd.',
+  shortDescription: 'Built software systems for marathon events, focusing on QR-based participant management and operational efficiency.',
+  fullDescription: 'Worked on software solutions for marathon event operations, building features that simplified how participant information was managed and verified. Focused on creating reliable workflows that reduced repetitive manual work while making event-day operations easier to track.',
+  image: '/src/assets/images/zemo.png',
+  aspectRatio: 'aspect-[4/3]',
+  linkText: 'internship.log',
+  showGithub: false,
+  showDemo: false,
+  tags: ['Software Engineering', 'QR Systems', 'Event Technology'],
+  date: '2024 – 2025',
+  savesCount: 0,
+  commentsCount: 0,
+  metadata: {
+    organization: 'Sports Reconnect Pvt. Ltd.',
+    role: 'Software Developer Intern',
+    highlights: [
+      'Developed a QR-based bib management workflow that connected participant registration with digital identification, making marathon check-in and verification faster and more organized.',
+      'Built event tracking and reporting capabilities that transformed operational data into a clearer view of participant activity, reducing reliance on manual verification and record-keeping.'
+    ]
+  }
+},
 
   // 10. Skills: Frontend & Design Systems
   {
@@ -371,60 +373,38 @@ export const PINS: PinItem[] = [
   },
 
   // 11. Experience: Technical Council Leadership
-  {
-    id: 'exp-council',
-    type: 'experience',
-    board: 'Experience',
-    title: 'Technical Core Coordinator & Student Outreach',
-    shortDescription: 'Organizing developer bootcamps, technical workshops, and peer mentorship reaching 250+ students.',
-    fullDescription: 'Serving as Core Technical Coordinator for the Department Information Technology Council. Organizing developer bootcamps, hands-on workshops, and hackathons.',
-    image: '/src/assets/images/pinterest_board_banner_1790105479740.jpg',
-    aspectRatio: 'aspect-[16/9]',
-    linkText: 'council.lead',
-    tags: ['Leadership', 'Workshops', 'Mentorship', 'Community Building'],
-    date: '2023 – Present',
-    savesCount: 0,
-    commentsCount: 0,
-    metadata: {
-      organization: 'Department Information Technology Council',
-      role: 'Core Technical Coordinator',
-      highlights: [
-        'Organized 4 hands-on developer workshops on modern web technologies reaching 250+ student participants',
-        'Mentored junior students in data structures, git collaboration, and foundational web engineering',
-        'Curated hackathon problem statements bridging theoretical curriculum with practical industry challenges'
-      ]
-    }
-  },
+
 
   // 12. Beyond Code: Typography & Visual Aesthetics
-  {
-    id: 'beyond-typography',
-    type: 'beyond',
-    board: 'Beyond Code',
-    title: 'Editorial Typography & Warm Color Palettes',
-    shortDescription: 'Exploring editorial grids, serif pairings, warm cream surfaces, and intentional micro-interactions.',
-    fullDescription: 'Good software is deeply functional; extraordinary software also treats human perception with care. Exploring typography pairings, tactile physics, and soft muted aesthetics.',
-    image: '/src/assets/images/board_dance_creative_1790105068857.jpg',
-    aspectRatio: 'aspect-[3/4]',
-    linkText: 'design.study',
-    tags: ['Typography', 'Editorial Design', 'Color Harmony', 'Micro-interactions'],
-    date: 'Creative Study',
-    savesCount: 0,
-    commentsCount: 0,
-    metadata: {
-      highlights: [
-        'Curating warm muted palettes (blush, sage, dusty blue, soft lavender)',
-        'Pairing characterful serif display fonts with clean modern geometric sans-serifs',
-        'Studying cognitive ergonomics and how subtle visual rhythm reduces cognitive load'
-      ]
-    }
+{
+  id: 'four-years-of-dance',
+  type: 'beyond',
+  board: 'Beyond Code',
+  title: 'Four Years of Dance, Rhythm & Teamwork',
+  shortDescription: 'Four years with the VESIT Dance Crew, performing, competing, and creating memories far beyond the classroom.',
+  fullDescription: 'For four years of engineering, dance has been my constant outside the world of code. As a member of the VESIT Dance Crew (VDC), I performed at college and intercollegiate competitions, worked through countless rehearsals, and grew alongside a team that made every performance worth the hours behind it. We went on to win several intercollegiate competitions — but the real takeaway was learning how much discipline, trust, and collective energy it takes to make something look effortless on stage.',
+  image: '/src/assets/images/vdc.png',
+  aspectRatio: 'aspect-[3/4]',
+  linkText: 'four.years.of.dance',
+  tags: ['VESIT Dance Crew', 'Performance', 'Teamwork', 'Discipline'],
+  date: '2013–2027 · VDC',
+  savesCount: 0,
+  commentsCount: 0,
+  metadata: {
+    highlights: [
+      '4 years as part of the VESIT Dance Crew (VDC)',
+      'Performed at multiple college and intercollegiate competitions',
+      'Won several intercollegiate dance competitions',
+      'Learned the discipline, collaboration, and trust behind every performance'
+    ]
   }
+}
 ];
 
 export const BOARDS_LIST = [
   { id: 'All', name: 'All Pins', count: PINS.length },
   { id: 'Projects', name: '📁 Projects', count: PINS.filter(p => p.board === 'Projects').length },
-  { id: 'About Me', name: '💡 About Me', count: PINS.filter(p => p.board === 'About Me').length },
+  { id: 'Education', name: '💡 Education', count: PINS.filter(p => p.board === 'Education').length },
   { id: 'Skills Toolbox', name: '⚡ Skills Toolbox', count: PINS.filter(p => p.board === 'Skills Toolbox').length },
   { id: 'Experience', name: '🏆 Experience', count: PINS.filter(p => p.board === 'Experience').length },
   { id: 'Beyond Code', name: '🩰 Beyond Code', count: PINS.filter(p => p.board === 'Beyond Code').length }

@@ -32,7 +32,7 @@ export const PROFILE_DATA = {
   title: 'IT Engineering Undergrad · Aspiring Software Engineer',
   institution: 'Department of Information Technology',
   graduation: 'Class of 2026',
-  avatar: '/src/assets/images/nidhi-pfp.png',
+  avatar: '/src/assets/images/pfp.jpeg',
   banner: '/src/assets/images/pinterest_board_banner_1790105479740.jpg',
   bio: 'Information Technology student turning ideas into reality. Focused on full-stack systems, clean architecture, AI reasoning, and green computing · Contemporary dancer & visual designer.',
   stats: {
@@ -371,8 +371,33 @@ export const PINS: PinItem[] = [
       ]
     }
   },
-
-  // 11. Experience: Technical Council Leadership
+// 9. Experience: First Open Source Contribution
+{
+  id: 'exp-open-source-piranha',
+  type: 'experience',
+  board: 'Experience',
+  title: 'My First Open Source Contribution @Piranha CMS',
+  shortDescription: 'A first attempt at contributing to open source, and a lot more confusing than I expected.',
+  fullDescription: 'I wanted to make my first open-source contribution, but I knew I had to start somewhere that wouldn’t completely overwhelm me. I initially looked at bigger projects like OrchardCore, but they felt like way too much for a first contribution, so I settled on Piranha CMS. And even then, opening the repository for the first time was intimidating. I remember looking at the code and thinking, “Okay... where am I even supposed to start?” I had to understand a codebase I hadn’t written, figure out how the different pieces connected, and then make sense of an issue that involved concepts I wasn’t completely comfortable with yet. There were quite a few moments where I felt like I was just staring at code and hoping it would eventually make sense. What helped was slowing down and actually following the code instead of trying to understand the entire repository at once. It took much longer than I expected, and I definitely doubted myself a few times, but eventually I understood enough to make my contribution and open my first PR. It wasn’t some massive contribution, but seeing that PR there felt like a small “okay, I can actually do this” moment for me. More than anything, it made open source feel less like this intimidating thing that experienced developers do and more like something I could slowly learn to be a part of.',
+  image: '/src/assets/images/piranha.png',
+  aspectRatio: 'aspect-[4/3]',
+  linkText: 'first-pr.log',
+  showGithub: true,
+  showDemo: false,
+  tags: ['Open Source', '.NET', 'C#', 'GitHub'],
+  date: '2026',
+  savesCount: 0,
+  commentsCount: 0,
+  metadata: {
+    organization: 'Piranha CMS',
+    role: 'Open Source Contributor',
+    highlights: [
+      'Made my first open-source contribution to a real-world .NET project.',
+      'Worked through an unfamiliar codebase and a complex issue involving existing project architecture.',
+      'Submitted my first contribution and pull request through GitHub.'
+    ]
+  }
+},
 
 
   // 12. Beyond Code: Typography & Visual Aesthetics

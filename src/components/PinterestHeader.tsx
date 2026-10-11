@@ -137,7 +137,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
                   <h4 className="font-bold text-sm text-[#111111]">Portfolio Updates</h4>
                   <span className="text-xs text-[#767676]">Recent milestones</span>
                 </div>
-                <div className="divide-y divide-[#F0F0F0] max-h-80 overflow-y-auto mt-2">
+                {/* <div className="divide-y divide-[#F0F0F0] max-h-80 overflow-y-auto mt-2">
                   {NOTIFICATIONS.map((n) => (
                     <div key={n.id} className="py-3 px-1 hover:bg-[#FAFAFA] rounded-xl transition-colors">
                       <div className="flex items-start justify-between gap-2">
@@ -147,7 +147,7 @@ export const PinterestHeader: React.FC<PinterestHeaderProps> = ({
                       <p className="text-xs text-[#5F5F5F] mt-1 leading-snug">{n.message}</p>
                     </div>
                   ))}
-                </div>
+                </div> */}
               </div>
             )}
           </div>

@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { X, Download, ExternalLink, FileText } from 'lucide-react';
+import resumePdf from '../assets/nidhip_resume.pdf';
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -11,8 +12,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({
   isOpen,
   onClose,
 }) => {
-  const resumeUrl = 'https://job-finder-resumes-nidhi.s3.ap-south-1.amazonaws.com/resumes/6a72270d8075e7a52dad2618/6a8eee524970df4e2168d9b5/nidhip_resume_%20%282%29.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA6I6YWJETHCQ554JG%2F20260923%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20260923T154238Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEPj%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCmFwLXNvdXRoLTEiRzBFAiEAiZnSy5XANZJQccHhDCX1GGsm0hySLPHXM7EpiZVHSVoCIEUUZwKZqZI9Vb6dxe7l35zxz1NX%2FPTniKkZn%2F%2FZnSHJKuMCCMH%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMOTgxMzE3NjAxNTc0IgzJkBaIScnKjGTP7gsqtwJhiiTqStuNPbzXDbNNnnKWCB0XE9agt%2FJRW4HoYsOQ1ROSP2YsWDFTgARInbXP8Q1%2F7UEf6e%2FEs9BaKZqaclgOtOzHXORZ%2BEmJXtEJxEmO1fgOlcISmJUvm0czXwbuoCadII%2B8ev1J6U8IZ%2BVG3ziKUhGNnK%2B%2BTWW68DcRBloagug7ULh0pnBBvKTLtnUdqLKmf7dCdiv6upgwXL0%2BPCBihyiEaaOLD%2Bjx3DaLtN7QXjPwY2TZgpkidn7DnwZUGwDANjZZEt%2FYmYI4UVRrX8abZF%2B3Uu5ArZsHpkbr3Mjvgx0U8PdTSZmMxdg2VNgIbXwuTKlx2Fl7keksWk1laGxRfeH9tb4dNH6F7PxKmBcCquUj5Zt6KKWY3%2FwAEY%2FHKS78RWJc1jdaA%2FI2yBYnqcIepaUDlEUDrjC%2B2s%2FVBjqtAmHyMCJKD3QjDcSagU%2FeHp4nZgG%2FsdYQkFZiFP1GA9nxQuLz2UuaidxyC0URDghdVkqgpqF%2BCe%2FUZiTUamFqL%2BpAh1eMhwDWcG%2FUmFlKHJZHP%2FFNS%2FIXUc6S4nCdWb6Som1O1pmLrHfRPjAfgNP4npmQm5O%2B%2B3%2FLpycO9rMVJdgYSFwaX%2F%2F1mtmIbWeqtUru8Hw5bDF2QBj1DtB0%2Fp1%2FrcScR9P%2B5xwoN4PVj3io0j8GDUIktu0NQEyfqUY0dH7hP%2Ba5OFdxZr%2BsqrH35eT8WQf%2FsFrZwLwa5Q%2FYWugfncVeNpzOvzVMVLOMF4nXM35KgWbF59%2F65PEw6FdITY3IcIuyurbred97E1kQXED6sMYLA28Ew%2Bs1m56EOZdgYFwzVr7F%2BiJ6%2FhuA8yLUw6U%3D&X-Amz-Signature=760e9c6b77786c3a31da2ea83f7de9ce3341008ba171a8d0863a34532558b453&X-Amz-SignedHeaders=host&response-content-disposition=inline';
-
+  const resumeUrl = resumePdf
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();

@@ -65,13 +65,13 @@ export const PinterestProfileHeader: React.FC<PinterestProfileHeaderProps> = ({
       </p>
 
       {/* Stats Counter Row */}
-      <div className="flex items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm text-[#5F5F5F] font-semibold mt-4">
+      {/* <div className="flex items-center justify-center gap-6 sm:gap-8 text-xs sm:text-sm text-[#5F5F5F] font-semibold mt-4">
         <span><strong className="text-[#111111]">{PROFILE_DATA.stats.boardsCount}</strong> Boards</span>
         <span aria-hidden="true" className="text-[#DCDCDC]">·</span>
         <span><strong className="text-[#111111]">{PROFILE_DATA.stats.pinsCount}</strong> Curated Pins</span>
         <span aria-hidden="true" className="text-[#DCDCDC]">·</span>
         <span><strong className="text-[#111111]">{PROFILE_DATA.stats.monthlyViews}</strong> Monthly Views</span>
-      </div>
+      </div> */}
 
       {/* Primary Action Buttons */}
       <div className="flex flex-wrap items-center justify-center gap-2.5 mt-5">

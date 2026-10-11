@@ -48,142 +48,39 @@ export const PROFILE_DATA = {
   }
 };
 
-export const NOTIFICATIONS = [
-  {
-    id: 'notif-1',
-    title: 'RoleRadar Project Update',
-    message: 'Added NLP parsing benchmarks for job messages (85% accuracy).',
-    time: '2 hours ago',
-    unread: true
-  },
-  {
-    id: 'notif-2',
-    title: 'Hackathon Milestone',
-    message: 'Finalist recognition at National Collegiate Innovation Hackathon.',
-    time: 'Yesterday',
-    unread: true
-  },
-  {
-    id: 'notif-3',
-    title: 'New Pin Added to Beyond Code',
-    message: 'Choreography & team synchronization board updated.',
-    time: '3 days ago',
-    unread: false
-  }
-];
+export const NOTIFICATIONS = [];
 
 export const PINS: PinItem[] = [
-  // 1. RoleRadar Project
-  {
-    id: 'roledar',
-    type: 'project',
-    board: 'Projects',
-    title: 'RoleRadar — Job Discovery & Matching Platform',
-    shortDescription: 'Extracts and matches tailored opportunities for engineering students from message digests and recruitment announcements.',
-    fullDescription: 'RoleRadar eliminates friction in fragmented job search channels. It ingests career announcements, professional community posts, and messaging digests, parsing job metadata (role requirements, experience levels, tech stacks, and compensation) to deliver tailored matches for engineering students and early-career developers.',
-    image: '/src/assets/images/project_roledar_1790105017179.jpg',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'roledar.app',
-    externalUrl: 'https://github.com',
-    tags: ['React', 'Node.js', 'Python NLP', 'PostgreSQL', 'Tailwind CSS'],
-    date: '2025',
-    savesCount: 0,
-    commentsCount: 0,
-    featured: true,
-    metadata: {
-      role: 'Full-Stack Developer & Architect',
-      metrics: '85% classification accuracy across 1,200+ raw messages',
-      highlights: [
-        'Automated parsing engine for unstructured recruitment messages with high precision extraction',
-        'Candidate relevance scoring algorithm matching applicant skill matrices with job criteria',
-        'Distraction-free Pinterest-inspired cards feed for rapid scanning and bookmarking'
-      ]
-    }
-  },
 
-  // 2. Hangout Project
-  {
-    id: 'hangout',
-    type: 'project',
-    board: 'Projects',
-    title: 'Hangout — Social Group Availability & Itinerary App',
-    shortDescription: 'Coordinates group plans, mutual availability heatmaps, and collaborative activity itineraries without chat chaos.',
-    fullDescription: 'Planning group gatherings usually degrades into endlessly fragmented group chats. Hangout streamlines the entire social lifecycle: from proposing activity ideas and voting on destinations to automatic availability heatmaps that pinpoint the ideal hour for everyone to meet without back-and-forth friction.',
-    image: '/src/assets/images/project_hangout_1790105032086.jpg',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'hangout.live',
-    externalUrl: 'https://github.com',
-    tags: ['TypeScript', 'React', 'Express', 'MongoDB', 'WebSockets', 'Tailwind'],
-    date: '2025',
-    savesCount: 0,
-    commentsCount: 0,
-    featured: true,
-    metadata: {
-      role: 'Product Designer & Frontend Lead',
-      metrics: 'Reduces group event scheduling coordination time by over 60%',
-      highlights: [
-        'Interactive time-slot matrix calculating group intersection and availability overlaps in real-time',
-        'Collaborative itinerary builder with live polling, split expenses calculation, and location pins',
-        'Fluid mobile-first interface optimized for rapid response on touch screens'
-      ]
-    }
-  },
-
-  // 3. CarbonIQ Project
-  {
-    id: 'carboniq',
-    type: 'project',
-    board: 'Projects',
-    title: 'CarbonIQ — Cloud Workload Carbon Intelligence',
-    shortDescription: 'Measures carbon emissions of computing workloads and predicts optimal green execution windows.',
-    fullDescription: 'CarbonIQ investigates the environmental footprint of digital workloads. By correlating regional power grid emissions intensity with compute task scheduling, it provides developers and sysadmins with actionable telemetry to shift non-urgent batch tasks to greener hours and lower carbon zones.',
-    image: '/src/assets/images/carboniq.png',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'carboniq.dev',
-    externalUrl: 'https://github.com/Atharvasp333/CarbonIQ',
-    tags: ['Python', 'fastapi', 'agenticai', 'aws', 'aws-cur', 'react', 'codecarbon'],
-    date: '2026',
-    savesCount: 0,
-    commentsCount: 0,
-    featured: true,
-    metadata: {
-      role: 'Systems & Research Developer',
-      metrics: 'Identified up to 34% estimated carbon reduction via off-peak execution rescheduling',
-      highlights: [
-        'Integrated real-time carbon grid intensity APIs to compute dynamic emissions scores per workload',
-        'Developed workload rescheduling simulation engine highlighting optimal green execution windows',
-        'Visualized multi-region cloud carbon metrics with clear, actionable reduction recommendations'
-      ]
-    }
-  },
-
-  // 4. FinGuard Project
-  {
-    id: 'finguard',
-    type: 'project',
-    board: 'Projects',
-    title: 'FinGuard — AI-Assisted Financial Intelligence',
-    shortDescription: 'Provides contextual expense pattern analysis, anomaly detection, and natural language cashflow summaries.',
-    fullDescription: 'FinGuard empowers users with transparent financial intelligence. Moving beyond standard static budgeting spreadsheets, it applies machine learning and generative reasoning to categorize transactions, spot recurring billing spikes, and present plain-English explanations of monthly cashflow trends.',
-    image: '/src/assets/images/project_finguard_1790105057391.jpg',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'finguard.ai',
-    externalUrl: 'https://github.com',
-    tags: ['React', 'Python', 'Scikit-learn', 'Gemini API', 'Tailwind', 'Data Viz'],
-    date: '2024',
-    savesCount: 0,
-    commentsCount: 0,
-    featured: true,
-    metadata: {
-      role: 'AI & Full-Stack Developer',
-      metrics: 'Identified 94% of unexpected recurring subscription changes during test benchmarks',
-      highlights: [
-        'Created pattern-recognition models to cluster recurring expenditures and detect abnormal spending surges',
-        'Integrated conversational insight generation synthesizing complex financial statements into clean highlights',
-        'Designed privacy-preserving local data processing workflows with zero unnecessary telemetry'
-      ]
-    }
-  },
+// 3. CarbonIQ Project
+{
+  id: 'carboniq',
+  type: 'project',
+  board: 'Projects',
+  title: 'CarbonIQ — Cloud Workload Carbon Intelligence',
+  shortDescription: 'An agentic carbon intelligence platform that helps developers measure, analyze, and schedule cloud workloads for lower-carbon execution.',
+  fullDescription: 'CarbonIQ is our Final Year Project focused on making cloud computing more environmentally aware. The platform combines workload-level carbon measurement with regional grid carbon intensity and carbon-aware scheduling to help developers understand not only how much carbon their workloads produce, but also when and where those workloads can be executed more sustainably. My primary contribution was building the CarbonIQ CLI, which acts as the bridge between CodeCarbon and Microsoft Carbon Aware SDK. The CLI allows users to run workloads, collect their emissions data through CodeCarbon, retrieve carbon-intensity and forecast data through Carbon Aware, and analyze the results to identify greener execution windows. I also worked on packaging and structuring the CLI so that the CarbonIQ tooling can be installed and used as a standalone developer tool, along with integrating the underlying carbon-aware services and preparing the project for deployment.',
+  image: '/src/assets/images/carboniq.png',
+  aspectRatio: 'aspect-[4/3]',
+  linkText: 'carboniq.dev',
+  externalUrl: 'https://github.com/Atharvasp333/CarbonIQ',
+  tags: ['Python', 'CLI', 'CodeCarbon', 'CarbonAware', 'AWS', 'FastAPI', 'React', 'Agentic AI'],
+  date: '2026',
+  savesCount: 0,
+  commentsCount: 0,
+  featured: true,
+  metadata: {
+    role: 'Final Year Project · CLI & Carbon Intelligence Developer',
+    metrics: 'Built a developer-facing CLI integrating workload emissions measurement with carbon-aware scheduling data',
+    highlights: [
+      'Built the CarbonIQ CLI to connect CodeCarbon workload emissions measurements with Microsoft Carbon Aware carbon-intensity and forecast data',
+      'Implemented CLI workflows for running workloads, analyzing emissions, generating carbon-aware forecasts, and maintaining execution history',
+      'Integrated and packaged the carbon-aware components so users can interact with the system through a single developer-friendly CLI',
+      'Worked on deployment and infrastructure setup for the CarbonIQ services, including Docker-based integration and cloud components',
+      'Designed the CLI as the foundation for the wider CarbonIQ platform, enabling the dashboard and agentic layer to turn raw carbon data into actionable recommendations'
+    ]
+  }
+},
 
   // 5. Dance & Movement Board Pin
 {
@@ -265,32 +162,6 @@ export const PINS: PinItem[] = [
     }
   },
 
-  // 7. Skills: Backend Development
-  {
-    id: 'skill-backend',
-    type: 'skill',
-    board: 'Skills Toolbox',
-    title: 'Backend Services & Architecture Toolbox',
-    shortDescription: 'Scalable services, RESTful APIs, and asynchronous pipelines built with Node.js, Express, and FastAPI.',
-    fullDescription: 'Proficient in designing decoupled backend systems, secure authentication pipelines, and fast API endpoints. Focused on clean architecture, minimal latency, and robust error handling.',
-    image: '/src/assets/images/project_carboniq_1790105044945.jpg',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'tech.backend',
-    showGithub : false,
-    showDemo : false,
-    tags: ['Node.js', 'Express', 'FastAPI', 'REST APIs', 'JWT', 'Microservices'],
-    date: 'Skills Stack',
-    savesCount: 0,
-    commentsCount: 0,
-    metadata: {
-      skillsList: [
-        { name: 'Node.js', note: 'Event loop & servers' },
-        { name: 'Express.js', note: 'REST APIs & middlewares' },
-        { name: 'FastAPI', note: 'High performance async Python' },
-        { name: 'Microservices', note: 'Decoupled services' }
-      ]
-    }
-  },
 
   // 8. Experience: Software Engineering Intern
   {
@@ -347,30 +218,6 @@ export const PINS: PinItem[] = [
   }
 },
 
-  // 10. Skills: Frontend & Design Systems
-  {
-    id: 'skill-frontend',
-    type: 'skill',
-    board: 'Skills Toolbox',
-    title: 'Frontend Development & Interface Craft',
-    shortDescription: 'Modern responsive web applications crafted with React 19, TypeScript, Tailwind CSS, and fluid motion.',
-    fullDescription: 'Crafting accessible, human-friendly web applications with clean visual hierarchies, smooth micro-interactions, and robust state management.',
-    image: '/src/assets/images/project_finguard_1790105057391.jpg',
-    aspectRatio: 'aspect-[4/3]',
-    linkText: 'tech.frontend',
-    tags: ['React 19', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Vite', 'Responsive'],
-    date: 'Skills Stack',
-    savesCount: 0,
-    commentsCount: 0,
-    metadata: {
-      skillsList: [
-        { name: 'React 19', note: 'Hooks, suspense & modern architecture' },
-        { name: 'TypeScript', note: 'Strongly typed interfaces & contracts' },
-        { name: 'Tailwind CSS', note: 'Modular responsive design' },
-        { name: 'Performance', note: 'Lighthouse 95+ web vitals' }
-      ]
-    }
-  },
 // 9. Experience: First Open Source Contribution
 {
   id: 'exp-open-source-piranha',
@@ -430,7 +277,6 @@ export const BOARDS_LIST = [
   { id: 'All', name: 'All Pins', count: PINS.length },
   { id: 'Projects', name: '📁 Projects', count: PINS.filter(p => p.board === 'Projects').length },
   { id: 'Education', name: '💡 Education', count: PINS.filter(p => p.board === 'Education').length },
-  { id: 'Skills Toolbox', name: '⚡ Skills Toolbox', count: PINS.filter(p => p.board === 'Skills Toolbox').length },
   { id: 'Experience', name: '🏆 Experience', count: PINS.filter(p => p.board === 'Experience').length },
   { id: 'Beyond Code', name: '🩰 Beyond Code', count: PINS.filter(p => p.board === 'Beyond Code').length }
 ];

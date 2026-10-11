@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { X, Download, ExternalLink, FileText } from 'lucide-react';
-import resumePdf from '../assets/nidhip_resume.pdf';
+const resumePdf = "/nidhip_resume.pdf";
 
 interface ResumeModalProps {
   isOpen: boolean;
